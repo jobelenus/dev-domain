@@ -53,18 +53,22 @@ table {
 body {
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
-    line-height: 1.3;
+    line-height: 1.35;
     color: rgb(245, 245, 242);
     background-color: rgb(245, 245, 242);
+}
+sup { 
+  vertical-align: super;
+  font-size: smaller;
 }
 a {
     color: hsl(120, 46%, 59%);
 }
 h1, h2, h3, h4, h5, p {
-    margin-bottom: .5em;
+    margin-bottom: 1em;
 }
 h1 + h2, h1 + h3, h1 + h5 {
-    margin-top: -.9em !important; 
+    margin-top: -1.5em !important; 
     opacity: .66;
 }
 h1, h2, h3, h4, h5 {
@@ -102,4 +106,51 @@ main {
 main section, main article {
     padding: 2em;
     background-color: rgb(17, 17, 0);
+}
+
+main article {
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body div.flavor {
+  margin-bottom: -3em;
+  background-color: rgb(17, 17, 0);
+}
+
+section.thoughts ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+section.thoughts ul li {
+  max-width: 12em;
+  padding: 1em;
+  margin: .5em;
+  background-color: rgb(68, 68, 68);
+  color: white;
+}
+
+section.thoughts ul li {
+  clip-path: polygon(4% 2%, 96% 0%, 100% 98%, 2% 100%);
+}
+section.thoughts ul li:nth-child(2n) {
+  clip-path: polygon(0% 0%, 95% 2%, 93% 98%, 5% 96%);
+}
+section.thoughts ul li:nth-child(3n) {
+  clip-path: polygon(0% 4%, 100% 2%, 94% 100%, 0% 97%);
+}
+
+main h3 {
+  color: hsl(120, 46%, 59%);
+}
+main h3.flavor {
+  background-color: hsl(120, 46%, 59%);
+  color: #FFFFEE;
+  padding: .3em;
+  clip-path: inset(0 0 round 15px 0)
 }
