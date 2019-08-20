@@ -56,6 +56,9 @@ body {
     line-height: 1.35;
     color: rgb(245, 245, 242);
     background-color: rgb(245, 245, 242);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 sup { 
   vertical-align: super;
@@ -94,7 +97,7 @@ header {
   border-top: 20px solid hsl(120, 46%, 59%);
 }
 header, main {
-    padding: 3em;
+  padding: 3em;
 }
 main section:first-child h1, main section:first-child h2, main section:first-child h3,
 main section:first-child h4, main section:first-child h5 {
@@ -106,6 +109,7 @@ main section, main article {
 }
 
 main {
+  flex-grow: 1;
   background-image:
     linear-gradient(
       to bottom, 
