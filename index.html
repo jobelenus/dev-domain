@@ -6,6 +6,16 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
   <title>John Obelenus</title>
+  <script language="text/javascript">
+    const setvh = function () {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    setvh();
+    window.addEventListener('resize', () => {
+      setvh();
+    });
+  </script>
 </head>
 
 <body>
