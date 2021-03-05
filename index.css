@@ -155,6 +155,12 @@ section.thoughts ul li.big {
   font-size: 1.3em;
 }
 
+section.thoughts ul li.full {
+  font-size: 1.5em;
+  grid-column: auto / span 6;
+  grid-row: auto / span 2;
+}
+
 section.thoughts ul li a {
   color: var(--orange);
 }
